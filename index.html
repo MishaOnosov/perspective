@@ -4,6 +4,17 @@
 <head>
   <title>CSS3 Perspective Playground</title>
   <link rel="stylesheet" type="text/css" href="main.css" />
+
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="animation.js"></script>
 </head>
 
 <body>
@@ -44,7 +55,7 @@
 
   </div>
 
-  <css-doodle>
+  <!-- <css-doodle>
     :doodle {
     @grid: 1x3 / 100vmax;
     position: absolute;
@@ -71,11 +82,14 @@
     from { transform: translateY(-100%) }
     to { transform: translateY(100%) }
     }
-  </css-doodle>
+  </css-doodle> -->
 
   <script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script>
   <script src="https://unpkg.com/vue@next"></script>
+
+  
   <script src="app.js"></script>
+  
 </body>
 
 </html>

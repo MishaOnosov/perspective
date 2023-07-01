@@ -1,4 +1,4 @@
-const app = Vue.createApp({
+export const app = Vue.createApp({
     data() {
         return {
             perspective: 100,
@@ -53,5 +53,3 @@ const app = Vue.createApp({
         }
     }
 }).mount('#app')
-
-
